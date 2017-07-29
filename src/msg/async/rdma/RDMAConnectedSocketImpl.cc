@@ -603,7 +603,7 @@ void RDMAConnectedSocketImpl::notify()
   int ret;
 
   ret = write(notify_fd, &i, sizeof(i));
-  assert(ret = sizeof(i));
+  assert(ret == sizeof(i));
 }
 
 void RDMAConnectedSocketImpl::shutdown()
